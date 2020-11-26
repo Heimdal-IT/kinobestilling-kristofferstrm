@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h1>Film</h1>
+    <label for="borat">Borat</label>
+    <input type="radio" name="film" id="borat" checked><br>
+    <label for="ap1">American Pie</label>
+    <input type="radio" name="film" id="ap1"><br>
+    <label for="kfp">Kung Fu Panda</label>
+    <input type="radio" name="film" id="kfp"><br>
+<h1>Bilettype</h1>    
+    <label for="voksen">Voksen</label>
+    <input type="number" id="voksen" value="0" min="0"><br><br>
+    <label for="barn">Barn</label>
+    <input type="number" id="barn" value="0" min="0"><br><br>
+<h1>Snacks</h1>
+    <label for="popcorn">Popcorn</label>
+    <input type="number" id="popcorn" value="0" min="0"><br><br>
+    <label for="bacon">Bacon Snacks</label>
+    <input type="number" id="bacon" value="0" min="0"><br><br>
+    <label for="sjokolade">Sjokolade</label>
+    <input type="number" id="sjokolade" value="0" min="0"><br><br>
+    <label for="kvikk">Kvikklunsj</label>
+    <input type="number" id="kvikk" value="0" min="0"><br><br>
+    <input type="button" onclick="bestill()" value="Sum"><br><br>
+    <h1>Sum</h1>
+    <p id="sum"></p>
+    
+<script>
+    function bestill(){
+        voksen = 150 * document.getElemetById("voksen").value;
+        document.getElementById("sum").innerHTML =  "kaods";
+    }
+</script>
+    
+
+</body>
+</html>
