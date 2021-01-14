@@ -32,8 +32,24 @@
     
 <script>
     function bestill(){
-        voksen = 150 * document.getElemetById("voksen").value;
-        document.getElementById("sum").innerHTML =  "kaods";
+        voksen = 150 * document.getElementById("voksen").value;
+        
+        barn = 75 * document.getElementById("barn").value;
+              
+        popcorn = 50 * document.getElementById("popcorn").value;
+        
+        bacon = 50 * document.getElementById("bacon").value;
+        
+        sjokolade = 60 * document.getElementById("sjokolade").value;
+        
+        kvikk = 35 * document.getElementById("kvikk").value;
+        
+        
+           
+        sum = popcorn + barn + voksen + bacon + sjokolade + kvikk;
+        document.getElementById("sum").innerHTML = sum + " kr";
+        
+    
     }
 </script>
     
